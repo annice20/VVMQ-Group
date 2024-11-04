@@ -57,12 +57,22 @@ body{
 }
 
 .choix{
-    display: none;
-    margin: auto;
+    position: absolute;
+    top:0;
+    left: 28%;
+    transform: translate(10%, -20%) scale(0.1);
     width: 40%;
     height: 270px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: brown;
     border-radius: 10px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(10%, -20%) scale(1);
 }
 
 .choix input[type=text]{

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Voitures</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font/css/all.css" type="text/css">
 </head>
@@ -22,15 +22,15 @@
                     <li><a href="voitures.html"><i class="fas fa-car"></i> Voitures</a></li>
                     <li><a href="service.html"> Services</a></li>
                     <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
-                    <li><a href="#" id="mybtn"><i class="fa fa-search"></i> Rechercher</a></li>
+                    <li><a href="#" onclick="openPopup()"><i class="fa fa-search"></i> Rechercher</a></li>
                 </ul>
             </div>   
         </nav>
     </header>
     <div class="container">
-        <h1 style="text-align: center;">NOS VOITURES</h1>
+        <h1 style="text-align: center; color: white;">NOS VOITURES</h1>
         <div id="myModal" class="choix">
-            <span class="close">&times;</span>
+            <span class="close" onclick="closepopup()">&times;</span>
             <form>
                 <div>
                     <input type="text" placeholder="Entrer prix">
@@ -220,18 +220,13 @@
         </div>
     </footer>
     <script>
-        var modal = document.getElementById("myModal");
-
-        var btn = document.getElementById("mybtn");
-
-        var span = document.getElementsByClassName("close")[0];
-
-        btn.onclick = function() {
-            modal.style.display = "block";
+        let popup = document.getElementById("myModal")
+        function openPopup(){
+            popup.classList.add("open-popup");
         }
 
-        span.onclick = function() {
-            modal.style.display = "none";
+        function closepopup(){
+            popup.classList.remove("open-popup");
         }
     </script>
 </body>
