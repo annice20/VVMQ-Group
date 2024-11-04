@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+    color: white;
+}
+
+.logo{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display:flex;
+}
+
+.navbar-links li{
+    list-style-type: none;
+}
+
+.navbar-links ul li a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding: 1rem;
+}
+
+.navbar-links ul li a:hover{
+    background-color: black;
+}
+
+/** Voiture */
+.container{
+    margin-top: 100px;
+}
+
+.container h2{
+    width: 250px;
+}
+
+.container p{
+    width: 250px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.choix{
+    display: none;
+    margin: auto;
+    width: 40%;
+    height: 270px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+.choix input[type=text]{
+    width: 500px;
+    height:50px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.59);
+}
+
+.choixboutton{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    background-color: black;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+}
+
+.choixboutton a{
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.image{
+    width: 300px;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.image img{
+    width: 300px;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.allimage{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.card{
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.59);
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.cardbody{
+    padding: 2px 16px;
+}
+
+.cardfooter{
+    height: 60px;
+    width: 130px;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: red;
+    text-align: center;
+}
+
+.cardfooter a{
+    text-decoration: none;
+    color: white;
+    line-height: 60px;
+}
+
+/** Contact */
+.contactbody{
+    margin-top: 100px;
+}
+
+.contactbody input[type=text]{
+    width: 510px;
+    height:50px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.59);
+}
+
+.contactbody textarea{
+    width: 510px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.59);
+}
+
+.envoyer{
+    margin-top: 1rem;
+    background-color: black;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+}
+
+.envoyer a{
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.envoyer:hover{
+    background-color: brown;
+}
+
+/** footer*/
+footer{
+    background-color: brown;
+    margin-top: 100px;
+    padding: 30px 0;
+    display: flex;
+}
+
+.contactimage{
+    background-image: url(images/12.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact{
+    color: white;
+    margin-top: 1rem;
+    margin-left: 250px;
+    float: left;
+}
+
+.apropos{
+    color: white;
+    margin-top: 1rem;
+    margin-left: 100px;
+}
+
+.liens{
+    color: white;
+    margin-top: 1rem;
+    margin-left: 100px;
+}
+
+.liens i{
+    margin-right: 1rem;
+    color: white;
+}
+
+
