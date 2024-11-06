@@ -10,11 +10,6 @@ body{
     color: white;
 }
 
-.logo{
-    font-size: 1.5rem;
-    margin: .5rem;
-}
-
 .navbar-links ul{
     margin: 0;
     padding: 0;
@@ -30,10 +25,27 @@ body{
     color: white;
     display: flex;
     padding: 1rem;
+    line-height: 100px;
+    font-size: 20px;
+}
+
+.navbar-links ul li a i{
+    line-height: 100px;
 }
 
 .navbar-links ul li a:hover{
     background-color: black;
+}
+
+.icon{
+    color: white;
+    font-size: 30px;
+    line-height: 100px;
+    display: none;
+}
+
+#check{
+    display: none;
 }
 
 /** Voiture */
@@ -138,6 +150,7 @@ body{
     height: 60px;
     width: 130px;
     margin: auto;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: red;
     text-align: center;
@@ -192,6 +205,9 @@ footer{
     background-color: brown;
     margin-top: 100px;
     padding: 30px 0;
+}
+
+.footerbody{
     display: flex;
 }
 
@@ -215,6 +231,11 @@ footer{
     margin-left: 100px;
 }
 
+.apropos p{
+    width: 300px;
+    font-size: 20px;
+}
+
 .liens{
     color: white;
     margin-top: 1rem;
@@ -224,6 +245,105 @@ footer{
 .liens i{
     margin-right: 1rem;
     color: white;
+    font-size: 30px;
 }
 
+/** NAVBAR RESPONSIVE */
+@media all and (max-width: 858px){
+    .icon{
+        display: block;
+    }
 
+    .navbar-links ul{
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 134px;
+        left: -100%;
+        text-align: center;
+        display: block;
+        transition: all .5s;
+    }
+
+    .navbar-links ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ .navbar-links ul{
+        left: 0;
+    }
+}
+
+/** VOITURE RESPONSIVE */
+@media all and (max-width: 600px){
+    .allimage{
+        margin-left: 40px;
+    }
+
+    .card{
+        width: 290px;
+    }
+
+    .image{
+        width: 290px;
+    }
+
+    .image img{
+        width: 290px;
+    }
+}
+
+/** RECHERCHE RESPONSIVE */
+@media all and (max-width: 500px){
+    .choix{
+        height: 240px;
+    }
+
+    .choix input[type=text]{
+        width: 70%;
+    }
+
+    .choixboutton{
+        width: 120px;
+    }
+
+    .open-popup{
+        top: 30%;
+    }
+}
+
+/** CONTACT RESPONSIVE */
+@media all and (max-width: 510px){
+    .contactbody input[type=text]{
+        width: 300px;
+    }
+
+    .contactbody textarea{
+        width: 300px;
+    }
+}
+
+/** FOOTER RESPONSIVE */
+@media all and (max-width: 858px){
+    .footerbody{
+        width: 90%;
+        margin: auto;
+        left: -100%;
+    }
+    .contact{
+        margin-left: 12px;
+    }
+
+    .apropos{
+        margin-left: 20px;
+    }
+
+    .apropos p{
+        width: 100px;
+    }
+    
+    .liens{
+        margin-left: 12px;
+    }
+}
