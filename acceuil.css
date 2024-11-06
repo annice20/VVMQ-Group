@@ -42,3 +42,30 @@ nav .logo{
 	letter-spacing: 1px;
 	margin-bottom: 2rem;
 }
+
+.text a{
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.25rem;
+	border: 1px solid rgb(30, 30, 158);
+	color: aqua;
+	padding: 10px 20px;
+	margin-right: 30px;
+}
+
+.text a.cv{
+	color: rgb(34, 5, 102);
+	background-color: rgb(5, 5, 15);
+	font-weight: 600;
+	margin-top: 50px;
+}
+
+.text a.lien{
+	color: rgb(73, 152, 226);
+	background-color: rgb(2, 2, 39);
+	font-weight: 600;
+}
+
+.auto-typing{
+	color: aqua;
+}
