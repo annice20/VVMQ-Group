@@ -1,0 +1,11 @@
+.cardbody h2{
+    margin-top: 1rem;
+}
+
+.cardbody p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+body{
+    background-image:url(images/30.jpg) ;
+}
